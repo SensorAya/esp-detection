@@ -19,7 +19,7 @@ def Train(pretrained_path=None, dataset="cfg/datasets/coco_cat.yaml", imgsz=224,
         epochs=1200, # set to a reasonable epoch
         imgsz=imgsz, # input img shape, 224 means input is 224*224. if you want to train with w ≠ h, you need to set rect=True and imgsz=[h, w]
         batch=128,
-        device="cpu", # "1"
+        device=0, # "cpu"
         optimizer='auto',
         close_mosaic=30,
         mosaic=1.0,
