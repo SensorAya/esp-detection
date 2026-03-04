@@ -5,3 +5,7 @@ runs/
 .vscode/
 build/
 .idea/
+
+### env
+.env*
+.direnv/
