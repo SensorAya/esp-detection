@@ -26,6 +26,10 @@ def Train(pretrained_path=None, dataset="cfg/datasets/coco_cat.yaml", imgsz=224,
         mixup=0.0,
         copy_paste=0.1,
         rect=False,
+        lr0=0.001,          # Niedrigere Learning Rate
+        patience=300,  # Erhöht von 100 auf 300
+        dropout=0.2,         # Regularisierung hinzufügen
+        weight_decay=0.001,  # Stärkere Regularisierung
     )
     train_setting.update(kwargs)
     results = model.train(**train_setting)
